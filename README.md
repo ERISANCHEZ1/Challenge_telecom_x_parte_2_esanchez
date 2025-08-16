@@ -30,4 +30,29 @@ El dataset utilizado contiene información histórica de clientes de Telecom X, 
   - Preprocesamiento: StandardScaler, SimpleImputer, train_test_split
 - **Jupyter Notebook / Google Colab** para la ejecución del proyecto.
 
-## Estructura del proyecto
+
+## Proceso de análisis
+1. **Carga y limpieza de datos:** eliminación de columnas irrelevantes y tratamiento de valores faltantes.  
+2. **Codificación de variables categóricas:** uso de one-hot encoding y conversión de booleanos a enteros.  
+3. **Análisis exploratorio:** visualización de distribuciones, boxplots y matriz de correlación.  
+4. **Preparación de datos para modelos:** división en entrenamiento y prueba, normalización de variables cuando es necesario.  
+5. **Entrenamiento de modelos predictivos:** Random Forest y Regresión Logística.  
+6. **Evaluación de modelos:** exactitud, precisión, recall, F1-score y matriz de confusión.  
+7. **Análisis de importancia de variables:** identificación de factores clave que influyen en la cancelación.  
+8. **Conclusiones y recomendaciones:** estrategias de retención basadas en los resultados del modelo.
+
+## Resultados clave
+- Exactitud de los modelos: ~78-79%.
+- Variables más influyentes: `Tenure`, `TotalCharges`, `Contract`, `NumServicios`, `PaymentMethod`.
+- Estrategias de retención sugeridas:
+  - Incentivar contratos más largos.
+  - Programas de bienvenida y seguimiento para clientes nuevos.
+  - Promover métodos de pago automáticos.
+  - Soporte proactivo para clientes con servicios de fibra óptica.
+  - Paquetes personalizados para clientes de alto valor.
+
+## Cómo ejecutar el proyecto
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/tu-usuario/telecom-x-churn.git
+
